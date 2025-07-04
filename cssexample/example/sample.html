@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        hr{
+            background-color: gray;
+        }
+        .countury li:hover{
+            color: brown;
+            font-weight: bold;
+        }
+
+        .land {
+            color: green;
+        }
+        ul{
+            list-style-type: circle;
+        }
+
+        .food > li:first-child { /*1촌 사이에만 >기호 사용, 그 이상의 촌수는 나열하여 적용*/
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    ** 여행하고 싶은 나라 **
+    <hr />
+    <ol class="countury">
+        <li>스위스</li>
+        <li>미국</li>
+        <li>일본</li>
+        <li>호주</li>
+    </ol>
+
+    ** 여행하고 싶은 섬 **
+    <hr />
+    <ol class="land">
+        <li>제주도</li>
+        <li>하와이</li>
+        <li>오키나와</li>
+        <li>발리</li>
+    </ol>
+
+    ** 좋아하는 음식 **
+    <hr />
+    <ul class="food">
+        <li>짬뽕</li>
+        <li>삼겹살</li>
+        <li>떡볶이</li>
+    </ul>
+</body>
+</html>

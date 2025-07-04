@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그룹 선택자 예제</title>
+    <style>
+        h2, .notice, span {
+            color: teal;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        p, .info {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .hightlight {
+            background-color: #ffff99;
+            padding: 2px 4px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="notice">📢 도서관 공지</div>
+    <section>
+        <h2>📚 신간 입고 도서</h2>
+        <p class="info">다음 도서가 새로 입고되었습니다.</p>
+        <p>
+            <span class="hightlight">자바 프로그래밍</span> - 박은종 저
+        </p>
+        <p>
+            <span class="hightlight">모던 자바스크립트 & Node.js</span> - 이창헌 저
+        </p>
+    </section>
+    <section>
+        <h2>⏱ 대출 마감 임박 도서</h2>
+        <p class="info">아래 도서는 연체가 우려되오니 반납해주세요.</p>
+        <p>
+            <span class="hightlight">혼자 공부하는 파이썬</span> - 윤인성 저
+        </p>
+        <p>
+            <span class="hightlight">Do it! HTML+CSS+JS</span> -  고경희 저
+        </p>
+    </section>
+</body>
+</html>
