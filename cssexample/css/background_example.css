@@ -1,0 +1,14 @@
+body {
+    color: #665544;
+    background: white url("../image/tulip.gif") no-repeat fixed right center;
+    width: 950px;
+    padding: 10px;
+}
+
+p {
+    font-size: 15px;
+}
+
+em {
+    font-weight: bold;
+}

@@ -1,0 +1,42 @@
+table {
+    border: 1px solid rgba(116, 117, 111, 0.925);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+caption {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th,td {
+    border: 1px solid rgba(116, 117, 111, 0.925);
+    text-align: center;
+    padding: 8px 5px;
+    
+}
+
+th:nth-child(2) {
+    background-color: #43cbff;
+    color: white;
+}
+
+th:nth-child(3) {
+    background-color: #81d733;
+    color: white;
+}
+
+th:nth-child(4) {
+    background-color: yellow;
+}
+
+th:nth-child(5) {
+    background-color: orange;
+}
+
+th:nth-child(6) {
+    background-color: red;
+    color: white;
+}
+

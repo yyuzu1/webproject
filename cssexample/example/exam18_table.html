@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 스타일 속성</title>
+    <style type="text/css">
+        table {
+            width: 600px;
+            margin: 20px auto;
+            border: 2px solid #333;
+        }
+
+        table:nth-child(1) {
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        table:nth-child(1) th{
+            font-size: 1.4em;
+        }
+
+        table:nth-child(2){
+            border-collapse: separate;
+            border-spacing: 0px;
+        }
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            caption-side: bottom;
+        }
+        th,td{
+            border: 1px solid #666;
+            padding: 8px;
+            text-align: center;
+            empty-cells: show;
+
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>산 정보</caption>
+        <tr>
+            <th>산 이름</th>
+            <th>주소</th>
+            <th>전화번호</th>
+        </tr>
+        <tr>
+            <td>북한산</td>
+            <td>경기 고양시 덕양구 대서문길 375</td>
+            <td>02-909-0497</td>
+        </tr>
+        <tr>
+            <td>도봉산</td>
+            <td>서울특별시 도봉구 도봉동</td>
+            <td>02-954-2566</td>
+        </tr>
+        <tr>
+            <td>아차산</td>
+            <td>경기 구리시 아천동</td>
+            <td>02-450-1395</td>
+        </tr>
+    </table>
+
+    <table>
+        <caption>산정보</caption>
+        <tr>
+            <th>산이름</th>
+            <th>주소</th>
+            <th>전화번호</th>
+        </tr>
+        <tr>
+            <td>북한산</td>
+            <td>경기 고양시 덕양구 대서문길 375</td>
+            <td>02-909-0497</td>
+        </tr>
+        <tr>
+            <td>도봉산</td>
+            <td>서울특별시 도봉구 도봉동</td>
+            <td>02-954-2566</td>
+        </tr>
+        <tr>
+            <td>아차산</td>
+            <td>경기 구리시 아천동</td>
+            <td>02-450-1395</td>
+        </tr>
+        <tr>
+            <td>속리산</td>
+            <td>충청북도 보은군 속리산면 법주사로 84</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
