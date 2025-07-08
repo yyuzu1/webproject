@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>갤러리 웹페이지 구현</title>
+    <style>
+        body {
+            display: flex;
+            margin: 30px 30px;
+        }
+
+        h3 {
+            font-size: 25px;
+            color:dimgray;
+            text-align: center;
+        }
+
+        div {
+            flex-flow: row wrap;
+            flex-basis: 300px;
+            padding: 40px;
+            margin: 20px;
+            height: fit-content;
+            background-color: antiquewhite;
+            border-radius: 20px;
+        }
+
+        .a img {
+            width: 300px;
+            height: 300px;
+            box-shadow: 2px 2px 10px 3px rgb(170, 168, 165);
+            margin-bottom: 20px;
+        }
+
+        .b img{
+            position: relative;
+            left: 60px;
+            margin: 30px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="a">
+        <h3>명화</h3>
+        <img src="../image/pic1.jpg">
+        <img src="../image/pic2.jpg">
+    </div>
+
+    <div class="a">
+        <h3>캐릭터</h3>
+        <img src="../image/capyzou1.png">
+        <img src="../image/bg2.png">
+        <img src="../image/cat.gif">
+    </div>
+
+    <div class="b">
+        <h3>아이콘</h3>
+        <img src="../image/icon-plus.png">
+        <img src="../image/star.png">
+    </div>
+
+    <div class="a">
+        <h3>그림</h3>
+        <img src="../image/tulip.gif">
+    </div>
+</body>
+</html>
