@@ -1,0 +1,9 @@
+.box1{
+    width: 800px;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    color:honeydew;
+    background-color:seagreen;
+}
