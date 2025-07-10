@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성적 구하기 - 05_controlStatement</title>
+</head>
+<body>
+    <h3>성적 구하기</h3>
+    <table>
+        <tr>
+            <td>
+                <input type="text" name="ko" id="ko" placeholder="국어점수(kor)">
+            </td>
+            <td>
+                <input type="text" name="en" id="en" placeholder="영어점수(eng)">
+            </td>
+            <td>
+                <input type="text" name="math" id="math" placeholder="수학점수(math)" onkeyup="keyEnter(event)">
+            </td>
+            <td>
+                <button type="button" onclick="result()">성적 구하기</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <input type="text" name="sum" id="sum" placeholder="합계" readonly />
+            </td>
+            <td>
+            <input type="text" name="avg" id="avg" placeholder="평균" readonly />
+            </td>
+            <td>
+            <input type="text" name="grade" id="grade" placeholder="학점" readonly />
+            </td>
+        </tr>
+    </table>
+
+    <h3>숫자 맞추기 게임</h3>
+    <pre>
+
+        [참고] 1~10 사이의 난수 생성 : Math.floor(Math.random() * 10) + 1;
+
+        이 게임은 컴퓨터가 무작위로 생성한 숫자를 맞추는 게임입니다. 숫자는 1부터 10사이의 정수입니다.
+
+    </pre>
+    <table>
+        <tr>
+            <td>숫자 : </td>
+            <td>
+                <input type="text" name="number" id="number">
+            </td>
+            <!-- <td>
+                <button type="button" onclick="check()">확인</button>
+            </td> -->
+        </tr>
+        <tr>
+            <td>추측횟수 : </td>
+            <td>
+                <input type="text" name="no" id="no">
+            </td>
+            <td>힌트 : </td>
+            <td>
+                <input type="text" name="hint" id="hint">
+            </td>
+        </tr>
+    </table>
+
+    <h3>간단한 반복문 실습</h3>
+    <div>
+    <code>
+        1. 반복문을 사용하여 h1 ~ h6 태그로 Hello JavaScript를 출력해 주세요.<br />
+        2. 반복문을 사용하여 이미지를 출력해주세요.<br />
+    </code>
+    <br />
+    <button type="button" onclick="print()">출력</button>
+    </div>
+
+    <div id="hprint"></div>
+    <div id="imgprint"></div>
+
+    <script src="../js/05_controlStatement.js"></script>
+</body>
+</html>

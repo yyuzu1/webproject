@@ -116,5 +116,7 @@ function fnChange() {
 // }
 
 document.getElementById("btn").onclick = function() {
-    document.getElementById("namePrint").innerHTML = document.getElementById("name").value;
+    const nameValue = document.getElementById("name").value;
+    document.getElementById("namePrint").innerHTML
+        = nameValue ? `${nameValue} 님 반갑습니다.` : "이름을 입력해주세요."
 }
