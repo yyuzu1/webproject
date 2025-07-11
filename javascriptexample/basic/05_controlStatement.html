@@ -35,35 +35,24 @@
         </tr>
     </table>
 
-    <h3>숫자 맞추기 게임</h3>
-    <pre>
-
-        [참고] 1~10 사이의 난수 생성 : Math.floor(Math.random() * 10) + 1;
-
-        이 게임은 컴퓨터가 무작위로 생성한 숫자를 맞추는 게임입니다. 숫자는 1부터 10사이의 정수입니다.
-
-    </pre>
-    <table>
-        <tr>
-            <td>숫자 : </td>
-            <td>
-                <input type="text" name="number" id="number">
-            </td>
-            <!-- <td>
-                <button type="button" onclick="check()">확인</button>
-            </td> -->
-        </tr>
-        <tr>
-            <td>추측횟수 : </td>
-            <td>
-                <input type="text" name="no" id="no">
-            </td>
-            <td>힌트 : </td>
-            <td>
-                <input type="text" name="hint" id="hint">
-            </td>
-        </tr>
-    </table>
+    <div>
+        <h3>숫자 맞추기 게임</h3>
+         <code>[참고] 1~10 사이의 난수 생성 : Math.floor(Math.random() * 10) + 1;</code>
+          <p>이 게임은 컴퓨터가 무작위로 생성한 숫자를 맞추는 게임입니다. 숫자는 1부터 10사이의 정수입니다.</p>
+         <form>
+            <div class="number">
+                 <label>숫자 : </label>
+                   <input type="text" name="user" id="user">
+                   <input type="button" value="확인" onclick="check()">
+               </div>
+            <div>
+                 <label>추측횟수 : </label>
+                     <input type="text" name="guesses" id="guesses" readonly="readonly" />
+                     <label>힌트 : </label>
+                     <input type="text" name="hint" id="hint">
+            </div>
+      </form>
+    </div>
 
     <h3>간단한 반복문 실습</h3>
     <div>
@@ -77,6 +66,13 @@
 
     <div id="hprint"></div>
     <div id="imgprint"></div>
+
+    <!-- 구구단 출력 -->
+     <div>
+        <h3>구구단 출력</h3>
+        <button type="button" onclick="gugudanPrint()">출력</button>
+        <div id="gugudan"></div>
+     </div>
 
     <script src="../js/05_controlStatement.js"></script>
 </body>
